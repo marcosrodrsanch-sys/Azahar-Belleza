@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto - Azahar Belleza y Bienestar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#54634b",
+                        "on-primary-fixed": "#311116",
+                        "inverse-surface": "#342f2f",
+                        "background": "#fff8f7",
+                        "primary": "#7e5257",
+                        "inverse-on-surface": "#f8efee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed": "#1e1b1a",
+                        "surface-dim": "#e1d8d8",
+                        "on-secondary-container": "#5a6950",
+                        "tertiary-container": "#9b9694",
+                        "surface-bright": "#fff8f7",
+                        "surface-variant": "#e9e0e0",
+                        "surface": "#fff8f7",
+                        "primary-container": "#bd8a8f",
+                        "on-secondary-fixed": "#121f0c",
+                        "inverse-primary": "#f0b8bd",
+                        "surface-container-highest": "#e9e0e0",
+                        "primary-fixed": "#ffd9dc",
+                        "on-primary-container": "#49252a",
+                        "secondary-fixed-dim": "#bbccae",
+                        "outline-variant": "#d5c2c3",
+                        "secondary-container": "#d7e8c9",
+                        "on-tertiary-container": "#322f2e",
+                        "secondary-fixed": "#d7e8c9",
+                        "primary-fixed-dim": "#f0b8bd",
+                        "on-secondary-fixed-variant": "#3c4b34",
+                        "surface-tint": "#7e5257",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-low": "#fbf2f1",
+                        "tertiary-fixed-dim": "#cbc5c3",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1e1b1b",
+                        "tertiary": "#625d5c",
+                        "surface-container-high": "#efe6e6",
+                        "tertiary-fixed": "#e8e1df",
+                        "surface-container": "#f5eceb",
+                        "on-primary-fixed-variant": "#643b40",
+                        "on-surface": "#1e1b1b",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#504445",
+                        "on-tertiary-fixed-variant": "#494645",
+                        "outline": "#837374"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Manrope"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .floral-mask {
+            mask-image: url('https://fonts.gstatic.com/s/i/short-term/release/googlestandardsymbols/nature/default/24px.svg');
+            mask-repeat: no-repeat;
+            mask-size: contain;
+        }
+        .soft-gradient-bg {
+            background: radial-gradient(circle at 10% 20%, rgba(215, 232, 201, 0.15) 0%, transparent 40%),
+                        radial-gradient(circle at 90% 80%, rgba(126, 82, 87, 0.08) 0%, transparent 40%);
+        }
+
+        .hora-btn {
+            cursor: pointer;
+            color: #504445;
+        }
+        .hora-btn:hover {
+            border-color: #7e5257;
+            color: #7e5257;
+        }
+        .hora-btn.hora-seleccionada {
+            background-color: #7e5257;
+            border-color: #7e5257;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden soft-gradient-bg">
+<!-- TopNavBar -->
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 sticky" id="navbar">
+  <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+
+    <!-- Logo: enlace a la página de inicio -->
+    <a class="text-headline-sm font-headline-sm text-primary tracking-tight" href="inicio.html">
+      Azahar & Belleza
+    </a>
+
+    <!-- Enlaces escritorio -->
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="servicios.html">Servicios</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="productos.html">Productos</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="sobreNosotros.html">Sobre Nosotros</a>
+      <a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="contacto.html">Contacto</a>
+      <button onclick="window.location.href='contacto.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-lg hover:bg-primary/90 transition-all active:opacity-80">
+        Reservar Cita
+      </button>
+    </div>
+
+    <!-- Botón menú móvil -->
+    <button class="md:hidden text-primary" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+  </div>
+</nav>
+
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 relative">
+<!-- Floral Accent Layer 1 -->
+<div class="absolute -top-10 -right-20 opacity-20 pointer-events-none hidden lg:block">
+<span class="material-symbols-outlined text-[300px] text-secondary">local_florist</span>
+</div>
+<!-- Hero Title Section -->
+<header class="mb-20 text-center md:text-left relative z-10">
+<div class="flex flex-col md:flex-row items-baseline gap-4 mb-4">
+<h1 class="font-headline-lg text-headline-lg text-primary">Contacto</h1>
+<span class="font-headline-sm italic text-secondary opacity-80">Conócenos un poco más</span>
+</div>
+<div class="h-px w-24 bg-primary/30 mt-4 mx-auto md:mx-0"></div>
+</header>
+<!-- Top Section: Contact Info & Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-24 relative z-10">
+<!-- Left Column: Contact Details -->
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-8">
+<div class="group flex items-start gap-6">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container text-secondary shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">E-mail</p>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors underline decoration-outline-variant/30 underline-offset-4" href="mailto:azaharbellezaybienestar@gmail.com">azaharbellezaybienestar@gmail.com</a>
+</div>
+</div>
+<div class="group flex items-start gap-6">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container text-secondary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">Dirección</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Calle Castilla 47, Triana, Sevilla</p>
+</div>
+</div>
+<div class="group flex items-start gap-6">
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container text-secondary shrink-0">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-1">Web</p>
+<a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors" href="https://www.azaharbellezaybienestar.es">www.azaharbellezaybienestar.es</a>
+</div>
+</div>
+</div>
+<!-- Social Cards -->
+<div class="grid grid-cols-2 gap-4">
+<a class="flex flex-col items-center justify-center p-8 bg-tertiary-container/10 border border-outline-variant/20 rounded-xl hover:border-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">photo_camera</span>
+<span class="font-label-caps text-label-caps text-primary">Instagram</span>
+<span class="font-body-md text-on-surface-variant">azaharb&amp;b</span>
+</a>
+<a class="flex flex-col items-center justify-center p-8 bg-tertiary-container/10 border border-outline-variant/20 rounded-xl hover:border-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">movie</span>
+<span class="font-label-caps text-label-caps text-primary">TikTok</span>
+<span class="font-body-md text-on-surface-variant">azaharb&amp;b</span>
+</a>
+</div>
+<!-- Subtle Map Embed -->
+<div class="rounded-xl overflow-hidden border border-outline-variant/30 h-48 relative grayscale hover:grayscale-0 transition-all duration-700">
+<img alt="Map of Triana location" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcUkBXCSkllS3QnlErvzvEuekTGUIhzmDz62FjAhoFmlq_de0lQtR7ey8UoCGVqdrmXTMeP-34Re5Sc615u-KVWbJHaDwCLnbRxU6ziucLqdu3YFDwf-vIFWZ-Z36Gpou0bEQQXJ2oJJJZTz--09Qn2G7orcrLklxSBZNTRSLjyO_pFt_XqYJsfIn1tln2mjY2sY5WCzdj40dUKWCkzbD3VMUiT-1N_O3bOL31ogjgdZRZ8RFt5goH45NR9rt55oCwzlmePrJLBaw"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-label-caps font-label-caps text-primary shadow-sm">
+                        BARRIO DE TRIANA
+                    </div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl relative overflow-hidden border border-outline-variant/20">
+<div class="absolute bottom-0 right-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[200px] text-primary rotate-12">spa</span>
+</div>
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Escríbenos</h2>
+<p class="font-body-md text-on-surface-variant mb-10 max-w-md">Estaremos encantados de resolver cualquier duda sobre nuestros servicios o productos.</p>
+<form id="form-contacto" class="space-y-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="relative group">
+            <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">NOMBRE COMPLETO</label>
+            <input id="campo-nombre" class="w-full bg-transparent border-b border-outline/30 focus:border-primary focus:ring-0 transition-colors py-2 px-0" placeholder="Ej. Lucía García" type="text"/>
+        </div>
+        <div class="relative group">
+            <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">TELÉFONO</label>
+            <input id="campo-telefono" class="w-full bg-transparent border-b border-outline/30 focus:border-primary focus:ring-0 transition-colors py-2 px-0" placeholder="+34 ..." type="tel"/>
+        </div>
+    </div>
+    <div class="relative group">
+        <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">EMAIL</label>
+        <input id="campo-email" class="w-full bg-transparent border-b border-outline/30 focus:border-primary focus:ring-0 transition-colors py-2 px-0" placeholder="tu@email.com" type="email"/>
+    </div>
+    <div class="relative group">
+        <label class="block font-label-caps text-label-caps text-on-surface-variant mb-2">MENSAJE</label>
+        <textarea id="campo-mensaje" class="w-full bg-transparent border-b border-outline/30 focus:border-primary focus:ring-0 transition-colors py-2 px-0 resize-none" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+    </div>
+    <div class="flex items-start gap-3">
+        <input class="mt-1 rounded border-outline/30 text-primary focus:ring-primary/20" id="privacy" type="checkbox"/>
+        <label class="text-xs text-on-surface-variant font-body-md" for="privacy">
+            Acepto la política de privacidad y el tratamiento de mis datos personales para la gestión de mi consulta.
+        </label>
+    </div>
+    <button id="btn-enviar" class="group relative inline-flex items-center gap-2 bg-primary text-on-primary px-10 py-4 rounded-lg overflow-hidden transition-all hover:pr-14" type="submit">
+        <span class="font-label-caps text-label-caps">ENVIAR CONSULTA</span>
+        <span class="material-symbols-outlined absolute right-4 opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">arrow_forward</span>
+    </button>
+
+    <!-- Mensaje de éxito (oculto hasta enviar) -->
+    <div id="mensaje-envio" style="display:none;" class="p-5 rounded-xl border border-outline-variant/30 bg-secondary-container/20 text-center space-y-2">
+        <span class="material-symbols-outlined text-secondary text-4xl">mark_email_read</span>
+        <p class="font-headline-sm text-primary" style="font-size:18px;">¡Mensaje enviado!</p>
+        <p id="texto-envio" class="font-body-md text-on-surface-variant"></p>
+        <p class="font-body-md text-on-surface-variant">Nos pondremos en contacto contigo lo antes posible.</p>
+    </div>
+</form>
+</div>
+</div>
+</div>
+
+
+
+<!-- Full-Width Bottom Section: Booking Calendar -->
+<!-- Full-Width Bottom Section: Booking Calendar -->
+<div class="relative z-10">
+    <div class="max-w-4xl mx-auto bg-white/40 backdrop-blur-sm p-8 md:p-12 rounded-xl border border-outline-variant/30">
+        <div class="text-center mb-10">
+            <h2 class="font-headline-md text-headline-md text-primary mb-2">Reserva tu cita</h2>
+            <p class="font-body-md text-on-surface-variant">Elige el día y la hora que mejor te convenga.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+            <!-- Calendario funcional -->
+            <div>
+                <div class="flex items-center justify-between mb-6">
+                    <div id="cal-titulo" class="font-label-caps text-on-surface-variant"></div>
+                    <div class="flex gap-2">
+                        <button id="btn-prev" class="p-2 hover:bg-secondary-container/30 rounded-full transition-colors">
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button id="btn-next" class="p-2 hover:bg-secondary-container/30 rounded-full transition-colors">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nombres de días -->
+                <div class="grid grid-cols-7 gap-1 text-center mb-4">
+                    <div class="text-[10px] font-label-caps opacity-50">L</div>
+                    <div class="text-[10px] font-label-caps opacity-50">M</div>
+                    <div class="text-[10px] font-label-caps opacity-50">X</div>
+                    <div class="text-[10px] font-label-caps opacity-50">J</div>
+                    <div class="text-[10px] font-label-caps opacity-50">V</div>
+                    <div class="text-[10px] font-label-caps opacity-50">S</div>
+                    <div class="text-[10px] font-label-caps opacity-50">D</div>
+                </div>
+
+                <!-- Celdas de días (generadas por JS) -->
+                <div class="grid grid-cols-7 gap-1 text-center" id="cal-dias"></div>
+            </div>
+
+
+            <!-- Horas seleccionables -->
+            <div class="md:border-l md:border-outline-variant/20 md:pl-12">
+                <p class="font-label-caps text-label-caps text-on-surface-variant mb-6">HORAS DISPONIBLES</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3" id="horas-grid">
+                    <button class="hora-btn py-3 px-1 text-xs border border-outline-variant/40 rounded transition-all">09:30</button>
+                    <button class="hora-btn py-3 px-1 text-xs border border-outline-variant/40 rounded transition-all">10:00</button>
+                    <button class="hora-btn py-3 px-1 text-xs border border-outline-variant/40 rounded transition-all">11:30</button>
+                    <button class="hora-btn py-3 px-1 text-xs border border-outline-variant/40 rounded transition-all">16:00</button>
+                    <button class="hora-btn py-3 px-1 text-xs border border-outline-variant/40 rounded transition-all">17:30</button>
+                    <button class="hora-btn py-3 px-1 text-xs border border-outline-variant/40 rounded transition-all">19:00</button>
+                </div>
+
+                <button id="btn-confirmar" class="w-full mt-10 bg-secondary text-on-secondary font-label-caps text-label-caps py-4 rounded-lg hover:bg-secondary/90 transition-all">
+    CONFIRMAR SELECCIÓN
+                </button>
+
+                <!-- Mensaje de confirmación (oculto hasta pulsar) -->
+                <div id="mensaje-confirmacion" style="display:none;" class="mt-6 p-5 rounded-xl border border-outline-variant/30 bg-secondary-container/20 text-center space-y-2">
+                    <span class="material-symbols-outlined text-secondary text-4xl">check_circle</span>
+                    <p class="font-headline-sm text-headline-sm text-primary" style="font-size:18px;">¡Cita confirmada!</p>
+                    <p id="texto-confirmacion" class="font-body-md text-body-md text-on-surface-variant"></p>
+                    <p class="font-body-md text-body-md text-on-surface-variant">En breve recibirás un recordatorio. ¡Hasta pronto!</p>
+                </div>
+                
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Floral Accent Layer 2 -->
+<div class="absolute -bottom-20 -left-20 opacity-10 pointer-events-none hidden lg:block">
+<span class="material-symbols-outlined text-[350px] text-secondary rotate-45">eco</span>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container full-width py-12 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
+<div class="space-y-4">
+<span class="text-headline-sm font-headline-sm text-primary">Azahar Belleza</span>
+<p class="font-body-md text-on-surface-variant max-w-xs mx-auto md:mx-0">
+                    Tu oasis de calma en el corazón de Triana. Expertos en resaltar tu belleza natural.
+                </p>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-secondary mb-2">EXPLORA</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Productos</a>
+<a class="text-primary font-bold" href="#">Contacto</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-secondary mb-2">SÍGUENOS</span>
+<div class="flex justify-center md:justify-start gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-all hover:-translate-y-0.5" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-all hover:-translate-y-0.5" href="#">TikTok</a>
+</div>
+<div class="mt-6 pt-6 border-t border-outline-variant/30">
+<p class="font-label-caps text-[10px] text-on-surface-variant opacity-60">
+                        © 2026 Azahar Belleza y Bienestar. Calle Castilla 47, Triana, Sevilla.
+                    </p>
+</div>
+</div>
+</div>
+</footer>
+    <script>
+    // ── Calendario funcional ──────────────────────────────────────
+    const hoy = new Date();
+    let vistaAnio = hoy.getFullYear();
+    let vastaMes  = hoy.getMonth();
+    let diaSeleccionado = null;
+
+    function renderCalendario() {
+        // Título: "MAYO 2026"
+        const nombreMes = new Date(vistaAnio, vastaMes, 1)
+            .toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
+            .toUpperCase();
+        document.getElementById('cal-titulo').textContent = nombreMes;
+
+        const contenedor = document.getElementById('cal-dias');
+        contenedor.innerHTML = '';
+
+        // Día de la semana en que empieza el mes (0=Dom … adaptado a Lun=0)
+        let primerDia = new Date(vistaAnio, vastaMes, 1).getDay();
+        primerDia = primerDia === 0 ? 6 : primerDia - 1; // lunes primero
+
+        const ultimoDia = new Date(vistaAnio, vastaMes + 1, 0).getDate();
+
+        // Celdas vacías iniciales
+        for (let i = 0; i < primerDia; i++) {
+            const vacio = document.createElement('div');
+            vacio.className = 'py-3';
+            contenedor.appendChild(vacio);
+        }
+
+        // Días del mes
+        for (let d = 1; d <= ultimoDia; d++) {
+            const fecha  = new Date(vistaAnio, vastaMes, d);
+            const esDom  = fecha.getDay() === 0;
+            const esPas  = fecha < new Date(hoy.getFullYear(), hoy.getMonth(), hoy.getDate());
+            const esHoy  = fecha.toDateString() === hoy.toDateString();
+            const esSel  = diaSeleccionado
+                && diaSeleccionado.d === d
+                && diaSeleccionado.m === vastaMes
+                && diaSeleccionado.a === vistaAnio;
+
+            const btn = document.createElement('div');
+            btn.textContent = d;
+
+            if (esSel) {
+                // Día seleccionado: fondo y texto con el color de la marca
+                btn.className = 'py-3 text-sm rounded-lg cursor-pointer';
+                btn.style.backgroundColor = '#7e5257';
+                btn.style.color = '#ffffff';
+            } else if (esDom || esPas) {
+                // Domingos y días pasados: apagados, no clicables
+                btn.className = 'py-3 text-sm opacity-30';
+            } else if (esHoy) {
+                // Hoy: borde sutil para distinguirlo
+                btn.className = 'py-3 text-sm rounded-lg cursor-pointer border border-primary text-primary';
+            } else {
+                btn.className = 'py-3 text-sm rounded-lg hover:bg-secondary-container/50 cursor-pointer';
+            }
+
+            if (!esDom && !esPas) {
+                btn.addEventListener('click', () => {
+                    diaSeleccionado = { d, m: vastaMes, a: vistaAnio };
+                    renderCalendario();
+                });
+            }
+
+            contenedor.appendChild(btn);
+        }
+    }
+
+    document.getElementById('btn-prev').addEventListener('click', () => {
+        vastaMes--;
+        if (vastaMes < 0) { vastaMes = 11; vistaAnio--; }
+        diaSeleccionado = null;
+        renderCalendario();
+    });
+
+    document.getElementById('btn-next').addEventListener('click', () => {
+        vastaMes++;
+        if (vastaMes > 11) { vastaMes = 0; vistaAnio++; }
+        diaSeleccionado = null;
+        renderCalendario();
+    });
+
+    renderCalendario();
+    
+    // ── Selección de horas 
+    document.querySelectorAll('.hora-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.hora-btn').forEach(b => b.classList.remove('hora-seleccionada'));
+            btn.classList.add('hora-seleccionada');
+        });
+    });
+    
+    // ── Confirmación de cita ──────────────────────────────────────
+    document.getElementById('btn-confirmar').addEventListener('click', () => {
+        if (!diaSeleccionado) {
+            alert('Por favor, selecciona primero un día en el calendario.');
+            return;
+        }
+
+        const horaBtn = document.querySelector('.hora-seleccionada');
+        if (!horaBtn) {
+            alert('Por favor, selecciona también una hora.');
+            return;
+        }
+
+        const fecha = new Date(diaSeleccionado.a, diaSeleccionado.m, diaSeleccionado.d);
+        const fechaStr = fecha.toLocaleDateString('es-ES', {
+            weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+        });
+        const hora = horaBtn.textContent;
+
+        document.getElementById('texto-confirmacion').textContent =
+            'Tu cita es el ' + fechaStr + ' a las ' + hora + '.';
+
+        document.getElementById('mensaje-confirmacion').style.display = 'block';
+        document.getElementById('mensaje-confirmacion').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    // 
+
+    // ── Envío del formulario de contacto ─────────────────────────
+    document.getElementById('form-contacto').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const nombre   = document.getElementById('campo-nombre').value.trim();
+        const telefono = document.getElementById('campo-telefono').value.trim();
+        const email    = document.getElementById('campo-email').value.trim();
+        const mensaje  = document.getElementById('campo-mensaje').value.trim();
+        const privacidad = document.getElementById('privacy').checked;
+
+        if (!nombre) {
+            alert('Por favor, introduce tu nombre.');
+            return;
+        }
+        if (!email) {
+            alert('Por favor, introduce tu email.');
+            return;
+        }
+        if (!mensaje) {
+            alert('Por favor, escribe tu mensaje.');
+            return;
+        }
+        if (!privacidad) {
+            alert('Debes aceptar la política de privacidad para continuar.');
+            return;
+        }
+
+        document.getElementById('texto-envio').textContent =
+            'Gracias, ' + nombre + '. Hemos recibido tu consulta y te responderemos en ' + email + '.';
+
+        document.getElementById('form-contacto').reset();
+        document.getElementById('mensaje-envio').style.display = 'block';
+        document.getElementById('mensaje-envio').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    // ─────────────────────────────────────────────────────────────
+
+</script>
+
+
+</body></html>

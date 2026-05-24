@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Azahar Belleza y Bienestar | Santuario de Cuidado en Triana</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#625d5c",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1e1b1b",
+                        "tertiary-fixed-dim": "#cbc5c3",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#fbf2f1",
+                        "on-secondary-fixed-variant": "#3c4b34",
+                        "surface-tint": "#7e5257",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#d7e8c9",
+                        "primary-fixed-dim": "#f0b8bd",
+                        "secondary-container": "#d7e8c9",
+                        "on-tertiary-container": "#322f2e",
+                        "primary-fixed": "#ffd9dc",
+                        "on-primary-container": "#49252a",
+                        "secondary-fixed-dim": "#bbccae",
+                        "outline-variant": "#d5c2c3",
+                        "outline": "#837374",
+                        "on-surface-variant": "#504445",
+                        "on-tertiary-fixed-variant": "#494645",
+                        "error-container": "#ffdad6",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1e1b1b",
+                        "on-primary-fixed-variant": "#643b40",
+                        "surface-container": "#f5eceb",
+                        "tertiary-fixed": "#e8e1df",
+                        "surface-container-high": "#efe6e6",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f8efee",
+                        "primary": "#7e5257",
+                        "secondary": "#54634b",
+                        "on-primary-fixed": "#311116",
+                        "inverse-surface": "#342f2f",
+                        "background": "#fff8f7",
+                        "surface-container-highest": "#e9e0e0",
+                        "surface": "#fff8f7",
+                        "inverse-primary": "#f0b8bd",
+                        "primary-container": "#bd8a8f",
+                        "on-secondary-fixed": "#121f0c",
+                        "surface-bright": "#fff8f7",
+                        "tertiary-container": "#9b9694",
+                        "surface-variant": "#e9e0e0",
+                        "on-secondary-container": "#5a6950",
+                        "surface-dim": "#e1d8d8",
+                        "on-tertiary-fixed": "#1e1b1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "headline-sm": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "label-caps": ["Manrope"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fff8f7;
+            color: #1e1b1b;
+            font-family: 'Manrope', sans-serif;
+        }
+        .floral-accent {
+            pointer-events: none;
+            opacity: 0.2;
+            z-index: 0;
+        }
+        .glass-card {
+            background: rgba(255, 248, 247, 0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(126, 82, 87, 0.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/30 sticky" id="navbar">
+  <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+
+    <!-- Logo: enlace a la página de inicio -->
+    <a class="text-headline-sm font-headline-sm text-primary tracking-tight" href="inicio.html">
+      Azahar & Belleza
+    </a>
+
+    <!-- Enlaces escritorio -->
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="servicios.html">Servicios</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="productos.html">Productos</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="sobreNosotros.html">Sobre Nosotros</a>
+      <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="contacto.html">Contacto</a>
+      <button onclick="window.location.href='contacto.html'" class="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-lg hover:bg-primary/90 transition-all active:opacity-80">
+        Reservar Cita
+      </button>
+    </div>
+
+    <!-- Botón menú móvil -->
+    <button class="md:hidden text-primary" aria-label="Abrir menú">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+  </div>
+</nav>
+
+<header class="relative h-screen flex items-center justify-center overflow-hidden pt-16">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-80" data-alt="A serene and luxurious spa atmosphere with soft morning light filtering through linen curtains. In the foreground, organic orange blossoms (azahar) are artfully arranged next to minimalist skincare bottles. The overall mood is quiet, premium, and tranquil, using a palette of creams, soft pinks, and muted olive greens to reflect the brand's identity." src="img/fotoInicio.png"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background"></div>
+</div>
+<div class="relative z-10 text-center px-4">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6 animate-fade-in">Belleza y Bienestar en Armonía</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10 italic">Descubre un espacio dedicado a tu cuidado personal con tratamientos de vanguardia en el corazón de Triana.</p>
+<a class="inline-block bg-primary text-on-primary px-10 py-4 rounded-full font-label-caps text-label-caps tracking-[0.2em] uppercase transition-transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20" href="#servicios">Descubrir servicios</a>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-primary/40">
+<span class="material-symbols-outlined text-4xl">expand_more</span>
+</div>
+</header>
+<section class="py-24 md:py-32 relative overflow-hidden" id="sobre-nosotros">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="A charming, sun-drenched street view of Calle Castilla in the Triana neighborhood of Seville. The architectural details feature traditional wrought-iron balconies and white-washed walls with clay tiles. Soft, warm sunlight creates long shadows, and the atmosphere is filled with Spanish character and serene local life, suggesting the local roots of the beauty center." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuCpvsTt2-BZEtcJes1i9FAtvAMHVVSKzwcXL2uJD33zsjAaktIFmd715rDOX6SLwFCjDitliVANwY1v_TT5rQaZEXrjS-U82NTgzwh1H2czVb0rLz2bxJlbMDDFIXn9Ka3efUR0GE_TQTn3IL7pbVIMyw7d99c-e5un8m6mP0SpHBmBLKZcpcVwmBgbyWRGpxrp39aDypJBHpVrtxQAb-NIaIJztJzvN-7CfASTYVIhLH07qeFDWWVWywHRopgkqh_v8Rgy0iaoc"/>
+</div>
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
+</div>
+<div class="space-y-8">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Estructura Organizativa</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Azahar Belleza y Bienestar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Azahar es la típica flor de Sevilla en primavera, desprende dulzura, frescura y delicadeza. Está asociada a la calma, pureza y renovación, que es lo que queremos para nuestro negocio.
+                </p>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Ubicación</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Calle Castilla, 47, Triana, Sevilla, España.</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+                    Es un sitio céntrico pero tranquilo y lleno de encanto. Un lugar muy visitado por el que pasa mucha gente, ideal para encontrar tu momento de paz.
+                </p>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-low relative" id="servicios">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><div class="text-center mb-16 space-y-4">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Nuestros Servicios</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Excelencia en cada tratamiento</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto mb-8">Ofrecemos una amplia gama de cuidados faciales, corporales y medicina estética diseñados para resaltar tu belleza natural.</p>
+<a class="inline-block border-2 border-primary text-primary px-8 py-3 rounded-full font-label-caps text-label-caps hover:bg-primary hover:text-white transition-all uppercase tracking-widest" href="servicios.html">Ver todos los servicios</a>
+</div></div>
+</section>
+<section class="py-24 relative overflow-hidden" id="productos">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8 order-2 md:order-1">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Nuestra Filosofía</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Productos Sostenibles</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                    Usamos la marca sostenible española <strong>Freshly Cosmetics</strong>. Esta marca nos ayuda a proporcionar todos los principios activos que necesitamos en nuestra piel de forma sostenible y natural.
+                </p>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">eco</span>
+<span class="font-body-md text-body-md">Ingredientes 99% naturales</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">cruelty_free</span>
+<span class="font-body-md text-body-md">Cruelty-free y respetuosos</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span class="font-body-md text-body-md">Probado dermatológicamente</span>
+</div>
+</div>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img class="rounded-xl shadow-lg w-full" data-alt="A collection of Freshly Cosmetics products arranged elegantly on a wooden surface with soft shadows. The bottles are minimalist and eco-friendly, featuring clear labeling. The lighting is warm and organic, highlighting the natural textures and the premium quality of the sustainable skincare line." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD_kickjimQurOhoNwXO8gzEj3HvxW3a-5NXOSuXCSfwiPU_zvKGovkhvxyxHJJny2ZauZ5CzBTelB8vnAlXIfo4VeP7R4Tbq-IFnQnnSfqEQF2IV3JBpjmTCQLE6VS66yBTNmBAB2p053-sKkSZpgyaeaFIlfoUzMF41NJ8Z6Q7CsYJd0lBc8d2vx47nrRr4VIZ9GZqFI3qEXY74tVCZ-dcKcEvBg34eEHBuE4gBwVDlUnbV2LnCb4f5kuBPmKYXRuVAn4pX2ouk"/>
+<div class="h-40 bg-secondary-container/20 rounded-xl"></div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="h-40 bg-primary-container/20 rounded-xl"></div>
+<img class="rounded-xl shadow-lg w-full" data-alt="Close-up of a blue glass bottle from Freshly Cosmetics, capturing the light and reflecting a serene, spa-like environment. The background is softly blurred with hints of botanical elements. This image emphasizes the purity and active natural ingredients used in the treatments at Azahar." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeR-VxfrgptV_-CtsmXLBolMcswyM3h5UyICsU7zMipb_P8UTB2YgrkCdOQNp5Sv-t-fcfSR4QgaVw80xJ7bCS-4Nzz-dwf4KNVF3TlgP1dg3qr0a_D4S_tnq_p_WjfuXs89gf18XfnVIVyHAoD162ZrMdzRvgdySd24dav9wisj-LaeL5C9Po4N9v8rzAzDi-ZL5pN95yQy9jMFLUs_IzbLcKwJACwEYq7IjCXusbiDNZt3vw3UIbVOWcP5tFlltuukq6jWXMbEs"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 relative">
+<img class="rounded-2xl shadow-2xl relative z-10" data-alt="High-end beauty photography of a professional skincare routine for aging skin. Three sleek bottles—eye serum, face serum, and a cream jar—are displayed in a balanced composition on a stone pedestal. The lighting is soft and editorial, casting delicate shadows. The scene feels clinical yet deeply luxurious and effective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXc4YmriSECr7m0LxerYAovQRXSWJKSaYNbqdHl5mjuR40aPhmWD3wdZhlWmEezPZ4vBSpucmT6wyDiATvFrfBvYCabEz_nJdrjBJ1sQsKpgCOpUk-KEqQJ-B7fYsN6nh-LWGpBICPSZo9RnlgbAkLPPOV5FFCAQKUXrbpqQ_QarPxkJCIMWUQb2rtFJNW7RasfxyxuToGrwoa1GNb-glOT19fPmD1cSgN7vxCzhxzImmq5yiFlK3UeVsvoy5-ah4HXXr77-cosLI"/>
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-white/20 rounded-full blur-2xl animate-pulse"></div>
+</div>
+<div class="md:col-span-7 space-y-8">
+<h2 class="font-headline-md text-headline-md text-on-surface">Tratamiento Antiedad Revolucionario</h2>
+<p class="font-body-lg text-body-lg text-primary italic leading-relaxed">
+                        Reduce las arrugas un 67% y aporta firmeza (+75%) de forma duradera con Bakuchiol y Exosomas.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="text-3xl font-headline-md text-primary/30">01</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[20px] mb-2">Sérum de Bakuchiol</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Mejora la elasticidad y firmeza de la piel hasta en un 75%. Efecto piel tersa en 30 minutos.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="text-3xl font-headline-md text-primary/30">02</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[20px] mb-2">Contorno con Exosomas</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Reduce bolsas (-18%) y ojeras (-22%). Lifting de párpados caídos hasta un 27%.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="text-3xl font-headline-md text-primary/30">03</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[20px] mb-2">Crema de día y noche</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Aporta firmeza y mejora la edad biológica de la piel con un 36% más de suavidad.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 relative overflow-hidden bg-background">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Testimonios</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Lo que dicen nuestras clientas</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter">
+<div class="glass-card p-10 rounded-xl space-y-4 relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-6">format_quote</span>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">"El mejor trato que he recibido. Salí sintiéndome renovada y con una piel espectacular. ¡Volveré sin duda!"</p>
+<div class="pt-6 border-t border-outline-variant/30">
+<h5 class="font-label-caps text-label-caps text-on-surface">Laura Gómez</h5>
+<p class="text-[10px] text-on-surface-variant tracking-wider">CLIENTA FIEL</p>
+</div>
+</div>
+<div class="glass-card p-10 rounded-xl space-y-4 relative border-primary/20">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-6">format_quote</span>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">"Un ambiente súper relajante y profesional. La manicura fue perfecta y duró muchísimo. Lo recomiendo al 100%."</p>
+<div class="pt-6 border-t border-outline-variant/30">
+<h5 class="font-label-caps text-label-caps text-on-surface">Ana Martínez</h5>
+<p class="text-[10px] text-on-surface-variant tracking-wider">CLIENTA FIEL</p>
+</div>
+</div>
+<div class="glass-card p-10 rounded-xl space-y-4 relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-6 right-6">format_quote</span>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">"El masaje fue increíble. El personal es muy atento y cuidan cada detalle para que la experiencia sea única."</p>
+<div class="pt-6 border-t border-outline-variant/30">
+<h5 class="font-label-caps text-label-caps text-on-surface">Sofía Pérez</h5>
+<p class="text-[10px] text-on-surface-variant tracking-wider">CLIENTA FIEL</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container" id="contacto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="md:grid-cols-2 gap-16">
+<div class="space-y-10 max-w-xl">
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Contacto</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-2">Conócenos un poco más</h2>
+</div>
+<div class="space-y-6 flex flex-col items-center">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant">E-mail</h4>
+<p class="font-body-md text-body-md text-on-surface">azaharbellezaybienestar@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant">Web</h4>
+<p class="font-body-md text-body-md text-on-surface">www.azaharbellezaybienestar.es</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface-variant">Dirección</h4>
+<p class="font-body-md text-body-md text-on-surface">Calle Castilla 47, Triana, Sevilla</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4 justify-center">
+<a class="w-14 h-14 rounded-xl bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-14 h-14 rounded-xl bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined">videocam</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-surface-container-high py-12">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter text-center md:text-left items-center">
+<div class="text-headline-sm font-headline-sm text-primary">Azahar Belleza</div>
+<div class="flex justify-center space-x-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Servicios</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">TikTok</a>
+</div>
+<div class="font-body-md text-body-md text-secondary text-sm md:text-right">
+                © 2026 Azahar Belleza y Bienestar. Calle Castilla 47, Triana, Sevilla.
+            </div>
+</div>
+</footer>
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform active:scale-95 z-40" id="fab-top">
+<span class="material-symbols-outlined">calendar_month</span>
+</button>
+<script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>
